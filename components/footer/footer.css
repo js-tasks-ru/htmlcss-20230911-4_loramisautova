@@ -1,0 +1,28 @@
+.footer__container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 71px;
+    padding-bottom: 136px;
+}
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+.footer__title {
+    margin-bottom: 32px;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 48px;
+    font-family: 'Inter', sans-serif;
+}
+.footer__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    text-align: center;
+}

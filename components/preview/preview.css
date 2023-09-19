@@ -1,0 +1,11 @@
+.preview {
+    flex: 1 1 auto;
+    background-color: #F9FAFC;
+}
+.preview__content {
+    padding-top: 68px;
+    padding-bottom: 92px;
+}
+.card-list {
+    margin-bottom: 64px;
+}
