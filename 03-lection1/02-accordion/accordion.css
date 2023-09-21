@@ -1,11 +1,5 @@
 /* Стилизация аккордеона */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.accordion__container {
+.accordion {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -18,7 +12,6 @@ body {
 }
 .accordion__details {
     box-sizing: border-box;
-    width: 730px;
     padding: 24px 48px 24px 32px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
