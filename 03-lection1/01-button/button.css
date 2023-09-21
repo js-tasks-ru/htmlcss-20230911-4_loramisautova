@@ -1,13 +1,13 @@
 /* Стилизация кнопки */
 .btn {
-    width: 189px;
     height: 48px;
+    padding: 0 24px;
     cursor: pointer;
     border-radius: 8px;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 500;
-}
-.btn[disabled]:hover {
-    cursor: initial;
+    line-height: normal;
 }
 .btn_primary, .btn_summary {
     border: none;
@@ -24,8 +24,9 @@
     border: 1px solid var(--grey-3);
     background-color: transparent;
 }
-.btn_disabled {
+.btn:disabled {
     opacity: 0.5;
+    pointer-events: none
 }
 .btn_primary:hover {
     background-color: #2342C0;
