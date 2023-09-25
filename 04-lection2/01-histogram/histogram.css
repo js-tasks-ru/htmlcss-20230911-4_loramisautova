@@ -31,16 +31,14 @@
     line-height: 26px;
     color: var(--black);
 }
-.histogram__btn {
-    cursor: pointer;
-    display: flex;
-    border: none;
+.histogram__link {
+    margin-top: 3px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    background-color: transparent;
     color: var(--histogram-mainColor);
+    cursor: pointer;
 }
 .histogram__bar {
     height: var(--bar-maxHeight);
