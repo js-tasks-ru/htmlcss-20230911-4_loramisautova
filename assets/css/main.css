@@ -28,13 +28,13 @@
     --secondary-font: 'Inter', sans-serif;
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
-}
-
 html {
     height: 100%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
