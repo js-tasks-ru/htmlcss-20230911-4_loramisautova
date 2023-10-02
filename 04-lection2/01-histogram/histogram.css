@@ -1,9 +1,8 @@
 .histogram {
-    --bar-maxHeight: 50px;
     display: flex;
     flex-direction: column;
     gap: 39px;
-    padding: 16px 29px 24px 26px;
+    padding: 16px 24px 24px;
     font-family: var(--secondary-font);
     border: 1px solid var(--grey-3);
     border-radius: 8px;
@@ -41,7 +40,7 @@
     cursor: pointer;
 }
 .histogram__bar {
-    height: var(--bar-maxHeight);
+    height: 50px;
     display: flex;
     align-items: end;
     gap: 1px;
