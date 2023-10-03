@@ -1,6 +1,8 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
 
+@import '../../03-lection1/01-button/button.css';
+
 @import '../../components/container/container.css';
 @import '../../components/header/header.css';
 @import '../../components/preview/preview.css';
