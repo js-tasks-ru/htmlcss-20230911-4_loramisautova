@@ -48,6 +48,5 @@
 .histogram__data {
     display: flex;
     flex-grow: 1;
-    height: calc(var(--bar-height) * 100% / 50);
     background: var(--histogram-mainColor);
 }
