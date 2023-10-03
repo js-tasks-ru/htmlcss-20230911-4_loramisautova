@@ -1,7 +1,7 @@
 .calendar {
     display: grid;
     gap: 24px;
-    padding: 28px 30px;
+    padding: 28px 26px 32px;
     border-radius: 8px;
     border: 1px solid var(--grey-3);
     background-color: var(--white);
@@ -56,8 +56,8 @@
     opacity: 0.2;
     background: #A0B1F5;
 }
-.calendar__item:nth-child(25),
-.calendar__item:nth-child(30) {
+.calendar__item_active-start,
+.calendar__item_active-end {
     color: white;
     background: #4263EB;
     opacity: initial;
