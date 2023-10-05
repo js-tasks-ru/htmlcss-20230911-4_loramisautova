@@ -5,6 +5,9 @@
 @import '../../components/header/header.css';
 @import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
+@import '../../components/component/component.css';
+@import '../../components/sidebar/sidebar.css';
+@import '../../components/menu/menu.css';
 @import '../../pages/page/page.css';
 
 :root {
@@ -21,6 +24,7 @@
 
     --error: var(--red);
     --success: var(--blue);
+    --notificaiton: #D84910;
 
     --primary: var(--blue);
     --secondary: var(--purple);
@@ -28,13 +32,11 @@
     --secondary-font: 'Inter', sans-serif;
 }
 
-html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
 }

@@ -44,6 +44,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+ol, ul {
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 p {
     margin: 0;
 }
