@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
 }
-.page__component {
+.page_component {
     height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;

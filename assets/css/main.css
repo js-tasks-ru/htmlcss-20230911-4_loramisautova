@@ -1,9 +1,12 @@
 @import '../fonts/fonts.css';
 @import 'normalize.css';
 
+@import '../../03-lection1/01-button/button.css';
+
 @import '../../components/container/container.css';
 @import '../../components/header/header.css';
 @import '../../components/preview/preview.css';
+@import '../../components/card/card.css';
 @import '../../components/footer/footer.css';
 @import '../../components/component/component.css';
 @import '../../components/sidebar/sidebar.css';
@@ -21,6 +24,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --histogram-mainColor: #4263EB;
 
     --error: var(--red);
     --success: var(--blue);
@@ -30,6 +34,13 @@
     --secondary: var(--purple);
 
     --secondary-font: 'Inter', sans-serif;
+}
+
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
