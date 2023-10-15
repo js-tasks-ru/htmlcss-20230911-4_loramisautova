@@ -4,8 +4,22 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <title>Toggler</title>
     </head>
     <body>
-
+        <label class='toggler' for='switch'>
+            <input id='switch' class='toggler__input' type='checkbox'>
+            <span class="slider">
+                <span class='slider__toggle'></span>
+            </span>
+            <span class='slider__title'></span>
+        </label>
+        <label class='toggler' for='switch__checkbox'>
+            <input id='switch__checkbox' class='toggler__input' type='checkbox' disabled>
+            <span class="slider">
+                <span class='slider__toggle'></span>
+            </span>
+            <span class='slider__title'></span>
+        </label>
     </body>
 </html>
