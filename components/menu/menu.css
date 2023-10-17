@@ -17,6 +17,6 @@
     font-weight: 400;
     line-height: 22px;
 }
-.menu__item-active {
+.menu__item_active {
     color: var(--notificaiton);
 }
