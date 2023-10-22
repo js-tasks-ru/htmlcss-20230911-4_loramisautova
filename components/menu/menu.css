@@ -1,0 +1,22 @@
+.menu {
+    display: grid;
+    grid-row-gap: 16px;
+}
+.menu__title {
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.menu__list {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.menu__item_active {
+    color: var(--notificaiton);
+}
