@@ -19,7 +19,7 @@
     align-items: center;
     fill: var(--white);
 }
-.input__form.input__form_invalid {
+.input__form_invalid {
     border-color: var(--error);
 }
 .input__form {
@@ -28,14 +28,14 @@
     padding: 0 16px 0 14px;
     border-radius: 8px;
     border: 1px solid var(--grey-2);
-    overflow: hidden;
-}
-.input__form::placeholder {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    overflow: hidden;
+}
+.input__form::placeholder {
     color: var(--grey-4);
 }
 .input__icon {
@@ -53,7 +53,7 @@
     outline: 1px solid var(--success);
     box-shadow: 0 0 0 3px rgba(66, 99, 235, 0.3);
 }
-.input__form.input__form_invalid:focus {
+.input__form_invalid:focus {
     outline: 0 solid var(--error);
     box-shadow: 0 0 0 3px rgba(240, 61, 62, 0.3);
 }
