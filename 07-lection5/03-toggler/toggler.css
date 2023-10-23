@@ -1,14 +1,14 @@
-.toggler {
+.toggle {
     display: inline-flex;
     align-items: center;
     gap: 12px;
 }
-.toggler__input {
+.toggle__input {
     position: absolute;
     opacity: 0;
     left: -100vw;
 }
-.slider {
+.toggle__form {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -18,7 +18,7 @@
     border: 1px solid var(--grey-2);
     border-radius: 16px;
 }
-.slider__toggle {
+.toggle__trigger {
     display: inline-flex;
     width: 24px;
     height: 24px;
@@ -26,7 +26,7 @@
     background-color: var(--grey-2);
     transition: 0.3s;
 }
-.slider__title {
+.toggle__title {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -34,31 +34,30 @@
     line-height: 24px;
     color: var(--grey-4);
 }
-.toggler__input:checked ~ .slider {
+.toggle__input:checked ~ .toggle__form {
     background-color: #4263EB;
     border-color: #4263EB;
 }
-.toggler__input:checked ~ .slider .slider__toggle {
+.toggle__input:checked ~ .toggle__form .toggle__trigger {
     background-color: var(--white);
     transform: translateX(22px);
 }
-.toggler__input ~ .slider__title:after {
+.toggle__input ~ .toggle__title:after {
     content: 'Off';
 }
-.toggler__input:checked ~ .slider__title:after {
+.toggle__input:checked ~ .toggle__title:after {
     content: 'On';
 }
-.toggler__input:checked:focus ~ .slider__title:after {
+.toggle__input:checked:focus ~ .toggle__title:after {
     text-decoration: underline;
 }
-.toggler__input:disabled ~ .slider__title:after {
+.toggle__input:disabled ~ .toggle__title:after {
     content: 'Disabled';
 }
-.toggler__input[disabled] ~ .slider {
+.toggle__input[disabled] ~ .toggle__form {
     background-color: var(--grey-2);
     border-color: var(--grey-2);
 }
-
-.toggler__input[disabled] ~ .slider .slider__toggle {
+.toggle__input[disabled] ~ .toggle__form .toggle__trigger {
     background-color: var(--grey-3);
 }
