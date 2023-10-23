@@ -1,5 +1,7 @@
 .radio {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 .radio__input {
     position: absolute;
@@ -21,7 +23,7 @@
     border: 2px solid var(--grey-2);
     border-radius: 14px;
 }
-.radio__control svg {
+.radio__icon {
     visibility: hidden;
 }
 .radio__title {
@@ -38,21 +40,19 @@
 .radio__input:checked ~ .radio__state .radio__title:after {
     content: 'Selected';
 }
-.radio__input:checked ~ .radio__state .radio__control svg {
+.radio__input:checked ~ .radio__state .radio__control .radio__icon {
     visibility: visible;
     border-color: #4263EB;
 }
 .radio__input:checked ~ .radio__state .radio__control {
     border-color: #4263EB;
 }
-
 .radio__input:disabled ~ .radio__state .radio__title {
     color: var(--grey-2);
 }
 .radio__input:disabled ~ .radio__state .radio__title:after {
     content: 'Disabled';
 }
-
-.radio__input:focus ~ .radio__state .radio__title {
+.radio__input:checked:focus ~ .radio__state .radio__title {
     text-decoration: underline;
 }
