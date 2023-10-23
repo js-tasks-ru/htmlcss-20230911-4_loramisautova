@@ -26,3 +26,14 @@
     display: flex;
     text-align: center;
 }
+.footer__info {
+    color: var(--grey-3);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
