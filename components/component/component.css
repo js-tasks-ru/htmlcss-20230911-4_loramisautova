@@ -1,0 +1,5 @@
+.component__body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+}
