@@ -1,3 +1,8 @@
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 .checkbox__input {
     position: absolute;
     opacity: 0;
@@ -49,6 +54,6 @@
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control .checkbox__icon {
     display: none;
 }
-.checkbox__input:focus ~ .checkbox__state .checkbox__title {
+.checkbox__input:checked:focus ~ .checkbox__state .checkbox__title {
     text-decoration: underline;
 }
