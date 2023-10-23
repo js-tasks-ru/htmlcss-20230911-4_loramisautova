@@ -1,6 +1,3 @@
-.checkbox {
-    display: inline-flex;
-}
 .checkbox__input {
     position: absolute;
     opacity: 0;
@@ -29,7 +26,6 @@
     line-height: 24px;
     color: var(--grey-4);
 }
-
 .checkbox__input ~ .checkbox__state .checkbox__title:after {
     content: 'Default';
 }
@@ -40,7 +36,6 @@
 .checkbox__input:checked ~ .checkbox__state .checkbox__title:after {
     content: 'Checked';
 }
-
 .checkbox__input:disabled ~ .checkbox__state .checkbox__title:after {
     content: 'Disabled';
 }
@@ -51,7 +46,7 @@
     background-color: var(--grey-2);
     border-color: var(--grey-2);
 }
-.checkbox__input:disabled ~ .checkbox__state .checkbox__control svg {
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control .checkbox__icon {
     display: none;
 }
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
