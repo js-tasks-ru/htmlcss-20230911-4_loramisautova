@@ -62,3 +62,15 @@
     background: #4263EB;
     opacity: initial;
 }
+.calendar__size_sml {
+    max-width: 202px;
+    width: 202px;
+    padding: 14px;
+}
+.calendar__size_sml .calendar__title {
+    font-size: 14px;
+}
+.calendar__size_sml .calendar__container .calendar__inner .calendar__item {
+    font-size: 9px;
+    font-weight: 300;
+}

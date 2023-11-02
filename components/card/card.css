@@ -10,11 +10,17 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     border-radius: 12px;
     background: var(--white);
     box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
+}
+.card__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 .card__title {
     font-family: 'Roboto', sans-serif;
@@ -23,4 +29,10 @@
     font-weight: 500;
     line-height: normal;
     color: var(--black);
+}
+.card__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
 }

@@ -33,3 +33,6 @@
 .tooltip:hover .tooltip__bubble {
     display: block;
 }
+.tooltip_hover .tooltip__bubble {
+    display: block;
+}

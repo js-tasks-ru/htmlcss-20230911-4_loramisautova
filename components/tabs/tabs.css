@@ -1,0 +1,59 @@
+.tabs > input {
+    position: absolute;
+    opacity: 0;
+    left: -100vw;
+}
+.tabs__menu {
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.tabs__menu > li label {
+    position: relative;
+    padding: 8px 0;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--grey-2);
+}
+.tabs__content {
+    display: none;
+}
+input#all_tab:checked ~ .tabs__nav .container .tabs__menu li label[for='all_tab'],
+input#elements_tab:checked ~ .tabs__nav .container .tabs__menu li label[for='elements_tab'],
+input#containers_tab:checked ~ .tabs__nav .container .tabs__menu li label[for='containers_tab'],
+input#templates_tab:checked ~ .tabs__nav .container .tabs__menu li label[for='templates_tab'] {
+    color: var(--black);
+}
+input#all_tab:checked ~ .tabs__nav .container .tabs__menu li label[for='all_tab']:after,
+input#elements_tab:checked ~ .tabs__nav .container .tabs__menu li label[for='elements_tab']:after,
+input#containers_tab:checked ~ .tabs__nav .container .tabs__menu li label[for='containers_tab']:after,
+input#templates_tab:checked ~ .tabs__nav .container .tabs__menu li label[for='templates_tab']:after {
+    transform: scaleX(1);
+}
+input#all_tab:checked ~ main .tabs__content_all-tab,
+input#elements_tab:checked ~ main .tabs__content_elements-tab,
+input#containers_tab:checked ~ main .tabs__content_containers-tab,
+input#templates_tab:checked ~ main .tabs__content_templates-tab {
+    display: block;
+}
+.tabs__menu > li label:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: -8px;
+    left: 0;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.tabs__divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--grey-2);
+}
