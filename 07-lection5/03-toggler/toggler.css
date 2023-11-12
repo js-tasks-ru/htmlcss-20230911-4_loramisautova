@@ -1,0 +1,63 @@
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.toggle__input {
+    position: absolute;
+    opacity: 0;
+    left: -100vw;
+}
+.toggle__form {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 52px;
+    height: 28px;
+    padding: 2px;
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+}
+.toggle__trigger {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 16px;
+    background-color: var(--grey-2);
+    transition: 0.3s;
+}
+.toggle__title {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+.toggle__input:checked ~ .toggle__form {
+    background-color: #4263EB;
+    border-color: #4263EB;
+}
+.toggle__input:checked ~ .toggle__form .toggle__trigger {
+    background-color: var(--white);
+    transform: translateX(22px);
+}
+.toggle__input ~ .toggle__title:after {
+    content: 'Off';
+}
+.toggle__input:checked ~ .toggle__title:after {
+    content: 'On';
+}
+.toggle__input:checked:focus ~ .toggle__title:after {
+    text-decoration: underline;
+}
+.toggle__input:disabled ~ .toggle__title:after {
+    content: 'Disabled';
+}
+.toggle__input[disabled] ~ .toggle__form {
+    background-color: var(--grey-2);
+    border-color: var(--grey-2);
+}
+.toggle__input[disabled] ~ .toggle__form .toggle__trigger {
+    background-color: var(--grey-3);
+}
